@@ -25,8 +25,7 @@ import Wallpapers from "./Wallpapers";
 export default function App() {
   return (
     <>
-    <SOE />
+      <Comics />
     </>
   );
 }
-

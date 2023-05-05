@@ -16,14 +16,14 @@ export default function Comics() {
   return (
     <ImageBackground
       source={require("./assets/Dropboxp.png")}
-      style={styles.container}
+      style={styles.Comics}
     >
       <StatusBarBlack />
       <View style={[styles.list, { marginTop: 10 }]}>
         <View style={styles.lineMain}>
           <Image
             source={require("./assets/arrowLeft.png")}
-            style={[styles.arrowImage, { marginRight: 21 }]}
+            style={[styles.arrowImage4, { marginRight: 21 }]}
           />
           <Image
             source={require("./assets/Comics.png")}
@@ -45,12 +45,12 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
     marginBottom: 23,
   },
-  arrowImage: {
+  arrowImage4: {
     width: 6,
     height: 12,
     marginBottom: 20,
   },
-  container: {
+  Comics: {
     flex: 1,
     backgroundColor: "black",
     backgroundImage: require("./assets/Dropboxp.png"),

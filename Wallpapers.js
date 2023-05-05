@@ -1,7 +1,6 @@
 import React from "react";
 import {
   View,
-  StatusBar,
   Text,
   StyleSheet,
   Image,
@@ -22,7 +21,7 @@ export default function Wallpapers() {
         <View style={styles.lineMain}>
           <Image
             source={require("./assets/arrowLeft.png")}
-            style={[styles.arrowImage, { marginRight: 21 }]}
+            style={[styles.arrowImage4, { marginRight: 21 }]}
           />
           <Image
             source={require("./assets/Wallpapers.png")}
@@ -43,12 +42,12 @@ export default function Wallpapers() {
 }
 
 const styles = StyleSheet.create({
-  arrowImage: {
+  arrowImage4: {
     width: 6,
     height: 12,
     marginBottom: 20,
   },
-  container: {
+  Wallpapers: {
     flex: 1,
     backgroundColor: "black",
     backgroundImage: require("./assets/Dropboxp.png"),

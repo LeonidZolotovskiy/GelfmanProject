@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StatusBar, Text, StyleSheet, Image } from "react-native";
+import { View, Text, Image } from "react-native";
 import Footer from "./Footer";
 import StatusBarBlack from "./StatusBar";
 import styles from "./styles";

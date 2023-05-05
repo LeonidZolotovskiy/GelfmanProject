@@ -59,7 +59,11 @@ export default function MyDevices() {
 }
 
 const styles = StyleSheet.create({
-  textHash: { color: "white", fontWeight: 500, fontSize: 20 },
+  textHash: {
+    color: "white",
+    fontWeight: 500,
+    fontSize: 20,
+  },
   connected: {
     marginTop: 15,
     borderRadius: 4,
@@ -67,6 +71,24 @@ const styles = StyleSheet.create({
     overflow: "hidden",
     backgroundColor: "#66C770",
     textAlign: "center",
+  }, 
+  imageMyDevices: {
+    width: 217,
+    height: 22,
+    resizeMode: "contain",
+    marginBottom: 23,
+  },
+  imageIV16: {
+    width: 89,
+    height: 22,
+    resizeMode: "contain",
+    marginBottom: 23,
+  },
+  imageIN16: {
+    width: 89,
+    height: 22,
+    resizeMode: "contain",
+    marginBottom: 23,
   },
   textOff: {
     color: "#FF6F6F",
@@ -110,23 +132,5 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 0,
     width: "100%",
-  },
-  imageMyDevices: {
-    width: 217,
-    height: 22,
-    resizeMode: "contain",
-    marginBottom: 23,
-  },
-  imageIV16: {
-    width: 89,
-    height: 22,
-    resizeMode: "contain",
-    marginBottom: 23,
-  },
-  imageIN16: {
-    width: 89,
-    height: 22,
-    resizeMode: "contain",
-    marginBottom: 23,
   },
 });
