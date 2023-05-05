@@ -1,14 +1,8 @@
 import React from "react";
-import {
-  View,
-  StatusBar,
-  Text,
-  StyleSheet,
-  Image,
-  ScrollView,
-} from "react-native";
+import { View, Text, Image, ScrollView } from "react-native";
 import Footer from "./Footer";
 import StatusBarBlack from "./StatusBar";
+import styles from "./styles";
 
 export default function IN16() {
   return (
@@ -21,32 +15,10 @@ export default function IN16() {
         <View style={[styles.line]}>
           <Image
             source={require("./assets/IN-16.png")}
-            style={{
-              width: 148,
-              height: 22,
-              resizeMode: "contain",
-              marginBottom: 24,
-              marginTop: 40,
-            }}
+            style={styles.imageIN16}
           />
-          <View
-            style={{
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Text
-              style={{
-                borderRadius: 4,
-                width: 82,
-                overflow: "hidden",
-                backgroundColor: "#66C770",
-                textAlign: "center",
-              }}
-            >
-              Connected
-            </Text>
+          <View style={styles.center}>
+            <Text style={styles.textConnected}>Connected</Text>
           </View>
         </View>
         <View style={styles.line}>
@@ -103,33 +75,3 @@ export default function IN16() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  arrowImage: {
-    width: 6,
-    height: 12,
-  },
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-  list: {
-    flex: 1,
-  },
-  line: {
-    height: 100,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#303030",
-    borderBottomStyle: "solid",
-  },
-  text: {
-    color: "white",
-    fontSize: 20,
-    fontStyle: "normal",
-    height: 22,
-  },
-});

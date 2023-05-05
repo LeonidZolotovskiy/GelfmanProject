@@ -1,14 +1,9 @@
 import React from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  Image,
-  ScrollView,
-} from "react-native";
+import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 import Footer from "./Footer";
 import Footer2 from "./Footer2";
 import StatusBarBlack from "./StatusBar";
+import styles from "./styles";
 
 export default function Iducation() {
   return (
@@ -18,7 +13,7 @@ export default function Iducation() {
         style={styles.list}
         contentContainerStyle={{ paddingBottom: 20 }}
       >
-        <View style={styles.lineMain}>
+        <View style={styles.lineMain2}>
           <Image
             source={require("./assets/arrowLeft.png")}
             style={[styles.arrowImage, { marginTop: 15 }]}
@@ -31,12 +26,12 @@ export default function Iducation() {
         <View style={styles.rowBattery}>
           <Image
             source={require("./assets/image4.png")}
-            style={[styles.battery,{marginRight: 21}]}
+            style={[styles.battery, { marginRight: 21 }]}
           />
           <View style={{ mardin: 42 }} />
           <Image
             source={require("./assets/image5.png")}
-            style={[styles.battery,{marginLeft: 21}]}
+            style={[styles.battery, { marginLeft: 21 }]}
           />
         </View>
         <View style={styles.line}>
@@ -101,86 +96,4 @@ export default function Iducation() {
   );
 }
 
-const styles = StyleSheet.create({
-  rowBattery: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  arrowImage: {
-    width: 6,
-    height: 12,
-  },
-  imageIducation: {
-    width: 207,
-    height: 22,
-    resizeMode: "contain",
-    marginLeft: 20,
-    marginBottom: 24,
-    marginTop: 40,
-  },
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-  list: {
-    flex: 1,
-  },
-  line: {
-    height: 100,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#303030",
-    borderBottomStyle: "solid",
-  },
-  lineMain: {
-    height: 100,
-    flexDirection: "row",
-    alignItems: "center",
-    padding: 22,
-  },
-  text: {
-    color: "white",
-    fontSize: 20,
-    fontStyle: "normal",
-    height: 22,
-  },
-  battery: {
-    width: 76,
-    height: 287,
-    resizeMode: "contain",
-    marginBottom: 24,
-    marginTop: 40,
-  },
-  orangeText: {
-    color: "#FFA800",
-    fontWeight: 900,
-  },
-  center: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  cellPoint: {
-    marginRight: 4,
-    width: 10,
-    height: 50,
-    backgroundColor: "#FFA800",
-    borderRadius: 50,
-  },
-  cellPointOff: {
-    marginRight: 4,
-    width: 10,
-    height: 50,
-    backgroundColor: "#4A4A4A",
-    borderRadius: 50,
-  },
-  lineText: {
-    fontSize: 20,
-    height: 22,
-    color: "rgba(255, 255, 255, 0.5)",
-  },
-});
+

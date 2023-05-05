@@ -1,28 +1,22 @@
 import React from "react";
-import {
-  View,
-  StatusBar,
-  Text,
-  StyleSheet,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import Footer from "./Footer";
 import StatusBarBlack from "./StatusBar";
+import styles from "./styles";
 
 export default function ServiceInfo() {
   return (
     <View style={styles.container}>
       <StatusBarBlack />
-      <View style={[styles.list, { marginTop: 50 }]}>
-        <View style={styles.lineMain}>
+      <View style={[styles.list, { marginTop: 29 }]}>
+        <View style={styles.lineMain1}>
           <Image
             source={require("./assets/arrowLeft.png")}
-            style={[styles.arrowImage, { marginRight: 21 }]}
+            style={[styles.arrowImage4]}
           />
           <Image
             source={require("./assets/SERVICEINFO.png")}
-            style={styles.imageSI}
+            style={[styles.imageSI, { marginRight: 30 }]}
           />
         </View>
         <View style={styles.line}>
@@ -49,83 +43,3 @@ export default function ServiceInfo() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  imageSI: {
-    width: 256,
-    height: 22,
-    resizeMode: "contain",
-    marginBottom: 23,
-  },
-  arrowImage: {
-    width: 6,
-    height: 12,
-    marginBottom: 20,
-  },
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-  list: {
-    flexDirection: "column",
-    flex: 1,
-  },
-  line: {
-    height: 100,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#303030",
-    borderBottomStyle: "solid",
-  },
-  lineMain: {
-    height: 100,
-    flexDirection: "row",
-    justifyContent: "flex-start",
-    alignItems: "center",
-    padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#303030",
-    borderBottomStyle: "solid",
-  },
-  text: {
-    color: "white",
-    fontSize: 20,
-    fontStyle: "normal",
-    height: 22,
-  },
-  footerContainer: {
-    position: "absolute",
-    bottom: 0,
-    width: "100%",
-  },
-  lineText: {
-    fontSize: 20,
-    height: 22,
-    color: "rgba(255, 255, 255, 0.5)",
-  },
-  viewButton: {
-    flex: 1,
-    marginLeft: 17,
-    alignItems: "center",
-    justifyContent: "center",
-    position: "absolute",
-    bottom: 20,
-    left: 0,
-    right: 0,
-  },
-  styleButton: {
-    padding: 10,
-    width: 339,
-    height: 50,
-    backgroundColor: "white",
-    position: "absolute",
-    bottom: 70, // установить высоту, равную высоте Footer + отступ от него
-    left: 0,
-    right: 0,
-    justifyContent: "center",
-    alignItems: "center", // добавлено свойство
-  },
-});

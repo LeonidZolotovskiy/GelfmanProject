@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import Footer from "./Footer";
 import StatusBarBlack from "./StatusBar";
+import styles from "./styles";
 
 export default function Battery() {
   return (
@@ -17,7 +18,7 @@ export default function Battery() {
         style={styles.list}
         contentContainerStyle={{ paddingBottom: 20 }}
       >
-        <View style={styles.lineMain}>
+        <View style={styles.lineMain1}>
           <Image
             source={require("./assets/arrowLeft.png")}
             style={[styles.arrowImage, { marginTop: 15 }]}
@@ -74,75 +75,3 @@ export default function Battery() {
   );
 }
 
-const styles = StyleSheet.create({
-  arrowImage: {
-    width: 6,
-    height: 12,
-  },
-  orangeText: {
-    color: "#FFA800",
-    fontWeight: 900,
-  },
-  imageBattery: {
-    width: 166,
-    height: 22,
-    resizeMode: "contain",
-    marginBottom: 24,
-    marginTop: 40,
-  },
-  mapCharging: {
-    marginTop: 14,
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  textCharging: {
-    borderRadius: 4,
-    width: 82,
-    overflow: "hidden",
-    backgroundColor: "#66C770",
-    textAlign: "center",
-  },
-  image12: {
-    width: 323,
-    height: 321,
-    resizeMode: "contain",
-    marginBottom: 24,
-    marginLeft: 30,
-  },
-  lineText: {
-    fontSize: 20,
-    height: 22,
-    color: "rgba(255, 255, 255, 0.5)",
-  },
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-  list: {
-    flex: 1,
-  },
-  line: {
-    height: 100,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#303030",
-    borderBottomStyle: "solid",
-  },
-  lineMain: {
-    height: 100,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 30,
-  },
-  text: {
-    color: "white",
-    fontSize: 20,
-    fontStyle: "normal",
-    height: 22,
-  },
-});

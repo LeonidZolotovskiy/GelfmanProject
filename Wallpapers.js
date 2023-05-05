@@ -8,7 +8,6 @@ import {
   TouchableOpacity,
   ImageBackground,
 } from "react-native";
-import Footer from "./Footer";
 import Footer2 from "./Footer2";
 import StatusBarBlack from "./StatusBar";
 
@@ -54,6 +53,7 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     backgroundImage: require("./assets/Dropboxp.png"),
   },
+
   list: {
     flex: 1,
     flexDirection: "column",
@@ -91,7 +91,6 @@ const styles = StyleSheet.create({
   },
   viewButton: {
     flex: 1,
-    marginLeft: 17,
     alignItems: "center",
     justifyContent: "center",
     position: "absolute",
@@ -104,11 +103,9 @@ const styles = StyleSheet.create({
     width: 339,
     height: 50,
     backgroundColor: "white",
-    position: "absolute",
-    bottom: 70, // установить высоту, равную высоте Footer + отступ от него
-    left: 0,
-    right: 0,
     justifyContent: "center",
-    alignItems: "center", // добавлено свойство
+    alignItems: "center",
+    position: "absolute",
+    bottom: 68, // установить высоту, большую, чем высота Footer
   },
 });

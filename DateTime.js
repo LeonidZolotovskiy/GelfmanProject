@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 import Footer from "./Footer";
 import StatusBarBlack from "./StatusBar";
+import styles from "./styles";
 
 export default function DataTime() {
   return (
@@ -15,7 +16,7 @@ export default function DataTime() {
           <View style={styles.center}>
             <Image
               source={require("./assets/arrowLeft.png")}
-              style={styles.arrowImage}
+              style={styles.arrowImage2}
             />
             <Image
               source={require("./assets/DATE.png")}
@@ -70,62 +71,3 @@ export default function DataTime() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  arrowImage: {
-    width: 6,
-    height: 12,
-    marginBottom: 21,
-    marginRight: 10,
-  },
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-  list: {
-    flex: 1,
-  },
-  lineMain: {
-    height: 70,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginLeft: 20,
-    marginTop: 57,
-  },
-  line: {
-    height: 100,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#303030",
-    borderBottomStyle: "solid",
-  },
-  text: {
-    color: "white",
-    fontSize: 20,
-    fontStyle: "normal",
-    height: 22,
-  },
-  imageDATA: {
-    width: 216,
-    height: 22,
-    resizeMode: "contain",
-    marginBottom: 23,
-  },
-  orangeText: {
-    color: "#FFA800",
-    fontWeight: 900,
-  },
-  lineText: {
-    fontSize: 20,
-    height: 22,
-    color: "rgba(255, 255, 255, 0.5)",
-  },
-  center: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-});

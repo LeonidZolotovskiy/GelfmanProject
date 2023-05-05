@@ -2,7 +2,7 @@ import React from "react";
 import { View, StatusBar, Text, StyleSheet, Image } from "react-native";
 import Footer from "./Footer";
 import StatusBarBlack from "./StatusBar";
-
+import styles from "./styles"
 export default function Shop() {
   return (
     <View style={styles.container}>
@@ -29,7 +29,7 @@ export default function Shop() {
           />
         </View>
         <View style={styles.line}>
-          <Text style={styles.text}>Men,s wear</Text>
+          <Text style={styles.text}>Men`s wear</Text>
           <Image
             source={require("./assets/Arrow.png")}
             style={styles.arrowImage}
@@ -50,51 +50,3 @@ export default function Shop() {
   );
 }
 
-const styles = StyleSheet.create({
-  lineMain: {
-    height: 70,
-    flexDirection: "row",
-    justifyContent: "flex-start",
-    alignItems: "center",
-    marginLeft: 33,
-    marginTop: 57,
-  },
-  arrowImage: {
-    width: 6,
-    height: 12,
-  },
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-  list: {
-    flexDirection: "column",
-  },
-  line: {
-    height: 100,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#303030",
-    borderBottomStyle: "solid",
-  },
-  text: {
-    color: "white",
-    fontSize: 20,
-    fontStyle: "normal",
-    height: 22,
-  },
-  footerContainer: {
-    position: "absolute",
-    bottom: 0,
-    width: "100%",
-  },
-  imageShop: {
-    width: 148,
-    height: 22,
-    resizeMode: "contain",
-    marginBottom: 23,
-  },
-});

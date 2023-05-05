@@ -25,23 +25,8 @@ import Wallpapers from "./Wallpapers";
 export default function App() {
   return (
     <>
-    <Wallpapers />
+    <SOE />
     </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-  list: {
-    flexDirection: "column",
-  },
-  shopText: {
-    color: "white",
-    marginTop: 50,
-    width: 217,
-    height: 22,
-  },
-});
