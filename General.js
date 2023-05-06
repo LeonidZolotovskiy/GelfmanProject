@@ -115,7 +115,7 @@ const Line = styled(View)`
 
 const LineText = styled(Text)`
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
   height: 22px;
 `;

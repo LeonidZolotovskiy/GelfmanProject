@@ -25,7 +25,7 @@ import Wallpapers from "./Wallpapers";
 export default function App() {
   return (
     <>
-      <Wallpapers />
+      <Extras />
     </>
   );
 }

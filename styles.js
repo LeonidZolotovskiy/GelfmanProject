@@ -307,4 +307,10 @@ export default StyleSheet.create({
     marginBottom: 24,
     marginTop: 40,
   },
+  imageSetting: {
+    width: 181,
+    height: 22,
+    resizeMode: "contain",
+    marginBottom: 60,
+  },
 });

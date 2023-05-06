@@ -16,7 +16,7 @@ export default function Extras() {
           />
         </View>
         <View style={styles.line}>
-          <Text style={styles.text}>Comics"Helloween Storys"</Text>
+          <Text style={styles.text}>Comics"Helloween Story"</Text>
           <Image
             source={require("./assets/Arrow.png")}
             style={styles.arrowImage}
