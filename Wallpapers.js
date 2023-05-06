@@ -14,7 +14,7 @@ export default function Wallpapers() {
   return (
     <ImageBackground
       source={require("./assets/Girl.png")}
-      style={styles.container}
+      style={styles.Wallpapers}
     >
       <StatusBarBlack />
       <View style={[styles.list, { marginTop: 10 }]}>
