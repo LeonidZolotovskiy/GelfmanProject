@@ -122,8 +122,8 @@ export default StyleSheet.create({
     marginBottom: 23,
   },
   logo: {
-    width: 122.86,
-    height: 128.02,
+    width: 161,
+    height: 165,
   },
 
   imageLoading: {

@@ -23,9 +23,10 @@ import StatusBarBlack from "./StatusBar";
 import Wallpapers from "./Wallpapers";
 
 export default function App() {
+  
   return (
     <>
-      <Extras />
+      <FirstPage />
     </>
   );
 }
